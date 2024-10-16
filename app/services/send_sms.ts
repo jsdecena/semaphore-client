@@ -1,33 +1,26 @@
 import env from '#start/env'
 import axios from 'axios'
-import { API_KEY } from './index.js'
+import { API_KEY, SENDER_NAME } from './index.js'
 
-type SendSms =   {
-  apikey: string,
-  number: string,
-  message: string,
-  sendername: string,
+type SendSms = {
+  apikey: string
+  number: string
+  message: string
+  sendername: string
 }
 
-export const sendSms = async (
-  {
-    apikey,
-    number,
-    message,
-    sendername,
-  } : SendSms
-) => {
+export const sendSms = async ({ number, message }: SendSms) => {
   const BASE_URL = env.get('SEMAPHORE_URL')
-  if (!BASE_URL && !API_KEY) {
-    throw Error('You must have SEMAPHORE_URL and API_KEY in your env')
+  if (!BASE_URL && !API_KEY && !SENDER_NAME) {
+    throw Error('You must have SEMAPHORE_URL and API_KEY and SENDER_NAME in your env')
   }
 
   axios
     .post(`${BASE_URL ?? ''}/messages`, {
-      apikey,
+      apikey: API_KEY,
       number,
       message,
-      sendername,
+      sendername: SENDER_NAME,
     })
     .then((response) => {
       console.log('SEND SMS Info:', response.data)

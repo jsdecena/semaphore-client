@@ -18,6 +18,7 @@ sendSms({
 ```
 
 Just make sure you have your: [APIKEY](https://semaphore.co/account#)
+
 ```
 SEMAPHORE_API_KEY=<YOUR-KEY>
 SEMAPHORE_URL=https://api.semaphore.co/api/v4

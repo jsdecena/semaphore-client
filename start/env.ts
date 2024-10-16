@@ -19,4 +19,5 @@ export default await Env.create(new URL('../', import.meta.url), {
   LOG_LEVEL: Env.schema.string(),
   SEMAPHORE_API_KEY: Env.schema.string(),
   SEMAPHORE_URL: Env.schema.string(),
+  SEMAPHORE_SENDER_NAME: Env.schema.string(),
 })
