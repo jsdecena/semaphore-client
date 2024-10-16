@@ -3,10 +3,8 @@ import axios from 'axios'
 import { API_KEY, SENDER_NAME } from './index.js'
 
 type SendSms = {
-  apikey: string
   number: string
   message: string
-  sendername: string
 }
 
 export const sendSms = async ({ number, message }: SendSms) => {
