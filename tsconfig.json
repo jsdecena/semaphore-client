@@ -2,17 +2,17 @@
   "extends": "@adonisjs/tsconfig/tsconfig.app.json",
   "compilerOptions": {
     "target": "es6",
-    "module": "commonjs",
     "outDir": "./build",
     "rootDir": "./",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "typeRoots": ["./types", "./node_modules/@types"],
+    "typeRoots": ["./node_modules/@types", "./app/services"],
     "paths": {
       "@ioc:*": ["./node_modules/@adonisjs/*"]
-    }     
+    },
+    "types": ["node"]
   },
-  "include": ["src/**/*.ts", "types/**/*.d.ts"]  
+  "include": ["app/services/**/*.ts"]
 }

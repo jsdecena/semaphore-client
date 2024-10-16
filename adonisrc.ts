@@ -28,7 +28,7 @@ export default defineConfig({
       file: () => import('@adonisjs/core/providers/repl_provider'),
       environment: ['repl', 'test'],
     },
-    () => import('#providers/semaphore_client_provider')
+    () => import('#providers/semaphore_client_provider'),
   ],
 
   /*
