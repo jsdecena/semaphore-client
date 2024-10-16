@@ -1,9 +1,9 @@
 {
   "name": "semaphore-client",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": false,
   "type": "module",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "scripts": {
     "start": "node bin/server.js",
     "build": "node ace build",
