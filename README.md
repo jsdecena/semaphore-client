@@ -12,10 +12,8 @@ import { sendSms } from 'semaphore-client';
 lookUpAccount()
 lookUpSms()
 sendSms({
-      apikey: <YOUR-API-KEY>,
       number: <MOBILE-NUMBER>,
-      message: <YOUR-MESSAGE>,
-      sendername: <YOUR-SENDER-NAME>,
+      message: <YOUR-MESSAGE>
     })
 ```
 
