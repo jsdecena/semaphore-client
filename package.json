@@ -4,6 +4,7 @@
   "private": false,
   "type": "module",
   "license": "MIT",
+  "types": "app/services/semaphore-client.d.ts",
   "scripts": {
     "start": "node bin/server.js",
     "build": "node ace build",
