@@ -4,10 +4,19 @@ Unofficial NodeJs SDK for the Semaphore SMS https://semaphore.co/docs
 
 # How to use
 
-```json
+```
 import { lookUpAccount } from 'semaphore-client';
+import { lookUpSms } from 'semaphore-client';
+import { sendSms } from 'semaphore-client';
 
 lookUpAccount()
+lookUpSms()
+sendSms({
+      apikey: <YOUR-API-KEY>,
+      number: <MOBILE-NUMBER>,
+      message: <YOUR-MESSAGE>,
+      sendername: <YOUR-SENDER-NAME>,
+    })
 ```
 
 Just make sure you have your: [APIKEY](https://semaphore.co/account#)

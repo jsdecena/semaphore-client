@@ -1,10 +1,10 @@
 {
   "name": "semaphore-client",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "private": false,
   "type": "module",
   "license": "MIT",
-  "types": "app/services/semaphore-client.d.ts",
+  "types": "app/services/semaphore_client.d.ts",
   "scripts": {
     "start": "node bin/server.js",
     "build": "node ace build",
